@@ -42,8 +42,8 @@ class Location extends Component{
     render(){
         return (
             <div className="location-conatiner">
-                <input type="text" id="lat" className="location-input" placeholder="Latitude"/>
-                <input type="text" id="long" className="location-input" placeholder="Longitude"/>
+                <input type="text" id="lat" className="location-input" placeholder="Enter your Latitude"/>
+                <input type="text" id="long" className="location-input" placeholder="Enter your Longitude"/>
                 <button onClick = {this.handleLocation} className="findme-button">DETECT MY LOCATION</button>
                 <button onClick = {this.handleRestaurantSearch} className="search-button">FIND RESTAURANTS</button>
                 <br/>
