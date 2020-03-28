@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './location.css'
+import axios from 'axios';
 
 class Location extends Component{
     state = {
@@ -19,7 +20,19 @@ class Location extends Component{
         }
     }
     handleRestaurantSearch = ()=>{
-
+        let lat = +document.getElementById('lat').value,
+            lon = +document.getElementById('long').value;
+        axios.get('https://developers.zomato.com/api/v2.1/search', { 
+            params: { 
+                    lat,
+                    lon,
+                    sort: 'rating',
+                    radius: 10000
+             },
+            headers: {'user-key': 'b53c4652dac57dca5ffe0764a570822a'}
+            }).then(function(json){
+            console.log(json);
+        });
     }
     render(){
         return (
