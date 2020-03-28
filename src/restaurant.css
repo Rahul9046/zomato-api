@@ -1,0 +1,44 @@
+.restaurant-card{
+    width: 30%;
+    border: 1px solid #CB202D;;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+.restaurant-logo-container{
+    display: inline-block;
+    width: 20%;
+    margin-top: 10px;
+    float: left;
+    margin-left: 10px;
+}
+.restaurant-logo{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.restaurant-details{
+    width: 70%;
+    margin-top: 10px;
+    display: inline-block;
+}
+.info-row{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.field-name{
+    float: left;
+    width: 30%;
+    text-align: end;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.field-value{
+    float: right;
+    width: 65%;
+    text-align: start;
+    white-space: normal;
+    word-break: break-word;
+}
